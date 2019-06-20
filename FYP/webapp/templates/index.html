@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>
+        Whistleblower Web App
+    </title>
+</head>
+<body>
+
+    <nav style="margin-bottom:20px;" class="navbar navbar-expand-lg navbar-expand-lg navbar-fixed-top navbar-dark bg-dark">
+      <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="{% url 'index' %}">Whistleblower Web App</a>
+            <span class="navbar-text">Anonymus Crime Reporting Companion</span>
+          </div>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <ul class="navbar-nav navbar-right">
+                <li class="nav-item"><a class="nav-link" href="{% url 'webapp:usersignup' %}"><input style="width:100px;" type="button" class="btn btn-outline-light" name="signup" value="Sign Up"></a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'webapp:adminsignin' %}"><input style="width:100px;" type="button" class="btn btn-outline-light" name="admin" value="Admin"></a></li>
+            </ul>
+          </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Hello, there!</h1>
+        <p>Did you witness any crime you want to report?</p>
+        <p>And you want to do so without being dragged into the problems.</p>
+        <p>Fear not for we can help you report crime without your identity being disclosed</p>
+        <hr>
+        <p>Sign In now and use our service to report any crime or illegal activity you've witnessed</p>
+        <a href="{% url 'webapp:usersignin' %}" class="btn btn-dark" role="button">Sign In</a>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -64,7 +64,7 @@
     <form style="margin-top:50px;" class="form-row justify-content-center" action="{% url 'webapp:categorizereport' pk=report.pk %}" method="POST">
       {% csrf_token %}
       <input class="btn btn-primary" type="submit" name="read" value="Mark as Read">
-      <input class="btn btn-success" type="submit" name="cleared" value="Mark as Cleared">
+      <input style="margin-left:30px;margin-right:30px;" class="btn btn-success" type="submit" name="cleared" value="Mark as Cleared">
       <input class="btn btn-dark" type="submit" name="spam" value="Mark as Spam">
     </form>
 
